@@ -36,13 +36,13 @@ const Product = () => {
   return (
     <>
       <div className="flex w-full">
-        <div className="w-3/5 flex mb-12 justify-between">
+        <div className="w-full lg:w-3/5 flex mb-12 justify-between">
           <ProductSearch onSearch={handleOnSearch} />
         </div>
-        <div className="w-auto" />
+        <div className="hidden md:block md:w-auto " />
       </div>
-      <div className="flex w-full">
-        <div className="w-3/5 mr-16">
+      <div className="flex w-full flex-col lg:flex-row">
+        <div className="w-full mb-12 lg:mb-0 lg:w-3/5 mr-16">
           <ProductList productList={searchedProduct} />
         </div>
         <div className="flex-1 w-auto h-fit">

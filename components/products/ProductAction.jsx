@@ -70,7 +70,7 @@ const ProductAction = () => {
   };
 
   return (
-    <div className="bg-[#ECECEC] w-full h-full space-y-4 p-12">
+    <div className="bg-bg-light-gray w-full h-full space-y-4 p-12">
       <div className="mb-8 text-center">
         <h6 className="mb-2 font-semibold">Header Text</h6>
         <p className="font-extralight">

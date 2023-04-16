@@ -1,7 +1,7 @@
 const FirstContent = () => {
   return (
-    <div className="h-full w-full flex items-center">
-      <div className="w-2/5 space-y-8">
+    <div className="h-full w-full flex flex-col-reverse items-center md:flex-row">
+      <div className="w-full space-y-8 md:w-2/5 mt-8 md:mt-0">
         <h1 className="font-semibold">
           Lorem ipsum dolor sit amet consectetur
         </h1>
@@ -13,14 +13,14 @@ const FirstContent = () => {
           <button>
             <p>Call to Action</p>
           </button>
-          <button className="bg-white text-[#000000] border-2 border-black">
+          <button className="bg-bg-white text-[#000000] border-2 border-black">
             <p>See Workspace</p>
           </button>
         </div>
       </div>
-      <div className="w-3/5 h-full relative">
-        <div className="w-[calc(100%-200px)] h-[calc(100%-40px)] bg-[#C4C4C4] absolute right-20 bottom-0" />
-        <div className="w-48 h-52 bg-[#9D9D9D] absolute right-0" />
+      <div className="w-full h-full relative md:w-3/5">
+        <div className="w-[calc(100%-86px)] md:w-[calc(100%-200px)] h-[calc(100%-40px)] bg-img-light-gray absolute right-20 bottom-0" />
+        <div className="w-48 h-52 bg-img-dark-gray absolute right-0" />
       </div>
     </div>
   );

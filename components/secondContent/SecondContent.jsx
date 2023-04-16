@@ -1,7 +1,7 @@
 const SecondContent = () => {
   return (
-    <div className="h-full w-full items-center flex space-x-12">
-      <div className="w-1/4 h-full flex flex-col justify-start">
+    <div className="h-full w-full items-center flex flex-col space-y-12 md:space-x-12 md:flex-row">
+      <div className="w-full md:w-1/4 md:h-full flex flex-col md:justify-start">
         <h6 className="font-semibold">Header Text</h6>
         <p className="font-extralight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
@@ -9,8 +9,8 @@ const SecondContent = () => {
           porttitor rhoncus dolor purus non enim dolor
         </p>
       </div>
-      <div className="flex-1 h-full w-full bg-[#c4c4c4]"></div>
-      <div className="w-1/4 h-full flex flex-col justify-end">
+      <div className="flex-1 h-full w-full bg-img-light-gray"></div>
+      <div className="w-full md:w-1/4 md:h-full flex flex-col md:justify-end">
         <h6 className="font-semibold">Header Text</h6>
         <p className="font-extralight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,

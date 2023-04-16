@@ -34,32 +34,26 @@ const ProductList = ({ productList }) => {
 
   return (
     <>
-      <table className="table-auto w-full text-left text-sm font-light">
+      <table className="table-fix w-full text-left text-sm font-light">
         <thead className="font-medium ">
           <tr>
-            <th scope="col" className="px-6 py-4">
-              Name
-            </th>
-            <th scope="col" className="px-6 py-4">
-              Price
-            </th>
-            <th scope="col" className="px-6 py-4">
-              Action
-            </th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
           {productList.map((product, index) => (
             <tr key={`${product.name}-${index}`} className="">
-              <td className="whitespace-nowrap px-6 py-4">{product.name}</td>
-              <td className="whitespace-nowrap px-6 py-4">{product.price}</td>
-              <td className="whitespace-nowrap px-6 py-4">
+              <td className="whitespace-nowrap">{product.name}</td>
+              <td className="whitespace-nowrap">{product.price}</td>
+              <td className="whitespace-nowrap">
                 <div className="flex justify-center space-x-2">
                   <button onClick={() => handleOnEdit(index)}>
                     <p>Edit</p>
                   </button>
                   <button
-                    className="bg-white text-[#000000] border-2 border-black"
+                    className="bg-bg-white text-[#000000] border-2 border-txt-black"
                     onClick={() => handleOnDelete(index)}
                   >
                     <p>Delete</p>

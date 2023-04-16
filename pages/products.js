@@ -3,7 +3,7 @@ import { ProductProvider } from "@/context/ProductProvider";
 
 const Products = () => {
   return (
-    <main className="p-24 flex flex-col justify-center ">
+    <main className="p-12 md:p-24 flex flex-col justify-center ">
       <ProductProvider>
         <Product />
       </ProductProvider>

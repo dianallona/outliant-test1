@@ -17,30 +17,30 @@
   }
   table,
   td {
-    @apply border border-black;
+    @apply border border-txt-black px-3 py-2;
   }
   tbody tr:first-child td {
     @apply border-t-0;
   }
   th {
-    @apply text-center bg-[#ECECEC];
+    @apply text-center bg-bg-light-gray px-3 py-2;
   }
   td {
     @apply font-extralight text-center;
   }
   button {
-    @apply bg-[#000000] text-white font-semibold py-2 px-6 rounded;
+    @apply bg-txt-black text-bg-white font-semibold py-2 px-6 rounded;
   }
   button,
   input[type="submit"] {
-    @apply bg-[#000000] text-white font-semibold py-2 px-6 rounded;
+    @apply bg-txt-black text-bg-white font-semibold py-2 px-6 rounded;
   }
   input,
   input[type="search"] {
     @apply px-4 py-2 rounded text-sm;
   }
   input[type="search"] {
-    @apply border-2 border-black;
+    @apply border-2 border-txt-black;
   }
 }
 
